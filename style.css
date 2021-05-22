@@ -1,0 +1,183 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+header {
+  margin-top: 5px;
+  border-top: 4px solid #4272d7;
+  background: white;
+}
+
+header .mid_content .inner_content {
+  float: left;
+  width: 30%;
+}
+
+header .mid_content .inner_content h2 {
+  margin-top: 7px;
+  color: blue;
+}
+
+header .mid_content .inner_content h2 a {
+  text-decoration: none;
+}
+
+header .mid_content .menu {
+  float: right;
+  width: 70%;
+}
+
+header .mid_content .menu nav ul li {
+  display: inline-block;
+}
+
+header .mid_content .menu nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 13px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: .4s;
+}
+
+header .mid_content .menu nav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0px;
+  background: #e43737;
+  transition: .4s;
+}
+
+header .mid_content .menu nav ul li a:hover {
+  color: blue;
+  text-shadow: 2px 3px 2px #0026ff;
+  transform: scale(1.05);
+}
+
+header .mid_content .menu nav ul li a:hover::before {
+  width: 100%;
+}
+
+header .banner {
+  background-image: url(./img/Where-Do-You-Look-For-Vitality.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 200px 0px 300px 0px;
+}
+
+header .banner .inner_content h4 {
+  margin-top: -55px;
+}
+
+header .banner .inner_content h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 60px 0px 26px 0px;
+}
+
+header .banner .inner_content .button .btn_2 {
+  background: #4272d7;
+}
+
+header .banner .inner_content .button .btn_2 a {
+  display: block;
+  padding: 16px 26px;
+  position: relative;
+  overflow: hidden;
+  transition: .4s;
+  z-index: 1;
+}
+
+header .banner .inner_content .button .btn_2 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  background-image: linear-gradient(to right, #000000, #000000, #3190df, #aadb5c, #e60e68);
+  width: 0;
+  height: 200%;
+  transform: skew(25deg);
+  transition: .4s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+header .banner .inner_content .button .btn_2 a:hover {
+  color: deepskyblue;
+}
+
+header .banner .inner_content .button .btn_2 a:hover::before {
+  width: 200%;
+  transform: skew(25deg);
+}
+
+.brif_section {
+  margin: 50px 0px;
+}
+
+.brif_section .mid_content aside {
+  float: left;
+  width: 50%;
+  margin-top: -30px;
+}
+
+.brif_section .mid_content main {
+  float: right;
+  width: 50%;
+}
+
+.brif_section .mid_content main article h4 {
+  font-size: 25px;
+}
+
+.brif_section .mid_content main article p {
+  font-size: 15px;
+}
+
+.contact {
+  background: #e9e9e9;
+  padding: 60px 0px;
+}
+
+.contact .container .header {
+  margin: 30px 0px;
+}
+
+.contact .container aside {
+  float: left;
+  width: 50%;
+}
+
+.contact .container main {
+  float: right;
+  width: 50%;
+}
+
+.contact .container main form input[type="text"], .contact .container main form [type="email"], .contact .container main form [type="date"] {
+  width: 100%;
+}
+
+footer {
+  background: #171a21;
+  padding: 50px 0px 20px 0px;
+  margin-bottom: 2px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
